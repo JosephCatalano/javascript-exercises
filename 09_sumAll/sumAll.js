@@ -10,9 +10,9 @@ const sumAll = function (first, second) {
   }
 
   if (
-    (lowestNum > 0) &
-    (highestNum > 0) &
-    Number.isInteger(lowestNum) &
+    lowestNum > 0 &&
+    highestNum > 0 &&
+    Number.isInteger(lowestNum) &&
     Number.isInteger(highestNum)
   ) {
     for (let i = lowestNum; i <= highestNum; i++) {
